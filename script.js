@@ -1,8 +1,6 @@
-let nomeAqui = document.getElementById("nomeAqui");
-let btnEntrar = document.querySelector("#btnEntrar");
-let mensagem = document.getElementById("mensagem");
+    let texto = document.getElementById("texto");
+    let botao = document.getElementById("btnMudar");
 
-    btnEntrar.addEventListener("click", () => {
-    mensagem.innerText = `Olá ${nomeAqui.value}`;
-    
-});
+    botao.addEventListener("click", () => {
+        texto.innerText = "Texto alterado com JavaScript!";
+    });
