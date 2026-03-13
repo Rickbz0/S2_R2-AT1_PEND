@@ -1,12 +1,19 @@
-let input = document.getElementById("itemInput");
-let botao = document.getElementById("btnAdicionar");
+let input = document.getElementById("inputTarefa");
+let botao = document.querySelector("#btnAdicionar");
+let mensagem = document.getElementById("mensagem");
 let lista = document.getElementById("listaTarefas");
 
 botao.addEventListener("click", () => {
 
-    let texto = input.value;
+    let texto = input.value.trim();
 
-    if(texto === "") return;
+    if (texto === "") {
+
+        mensagem.textContent = "preencha a tarefa";
+        mensagem.className = "text-danger fw-bold";
+
+        return;
+    }
 
     let li = document.createElement("li");
 
@@ -17,4 +24,7 @@ botao.addEventListener("click", () => {
     lista.appendChild(li);
 
     input.value = "";
+
+    mensagem.textContent = "a tarefa adicionada com sucesso";
+    mensagem.className = "text-success fw-bold";
 });
