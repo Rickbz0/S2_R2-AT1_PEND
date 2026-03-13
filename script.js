@@ -4,17 +4,17 @@ let lista = document.getElementById("lista");
 
 botao.addEventListener("click", () => {
 
-    let texto = input.value;
+let texto = input.value;
 
-    if(texto === "") return;
+    if (texto === "") return;
 
-    let li = document.createElement("li");
+        let li = document.createElement("li");
 
-    li.textContent = texto;
+        li.textContent = texto;
 
-    li.classList.add("list-group-item");
+        li.classList.add("list-group-item");
 
-    lista.appendChild(li);
+        lista.appendChild(li);
 
-    input.value = "";
+        input.value = "";
 });
