@@ -1,5 +1,5 @@
 let input = document.getElementById("itemInput");
-let botao = document.getElementById("btnAdicionar");
+let botao = document.querySelector("#btnAdicionar");
 let lista = document.getElementById("lista");
 
 botao.addEventListener("click", () => {
