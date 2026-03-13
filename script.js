@@ -1,20 +1,20 @@
-let input = document.getElementById("itemInput");
-let botao = document.querySelector("#btnAdicionar");
-let lista = document.getElementById("lista");
+let tarefa = document.getElementById("tarefa");
+let btn = document.querySelector("#btn");
+let listar = document.getElementById("listar");
 
-botao.addEventListener("click", () => {
+btn.addEventListener("click", () => {
 
-let texto = input.value;
+let texto = tarefa.value;
 
-    if (texto === "") return;
+    if (texto === "") ;
 
-        let li = document.createElement("li");
+        let lista = document.createElement("lista");
 
-        li.textContent = texto;
+        lista.textContent = texto;
 
-        li.classList.add("list-group-item");
+        lista.classList.add("list-group-item");
 
-        lista.appendChild(li);
+        listar.appendChild(lista);
 
-        input.value = "";
+        tarefa.value = "";
 });
