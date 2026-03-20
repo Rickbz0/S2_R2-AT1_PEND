@@ -16,9 +16,21 @@ btn.addEventListener("click", () => {
 
         let li = document.createElement("li");
 
+        li.classList.add("list-group-item");
+
         li.textContent = texto;
 
-        li.classList.add("list-group-item");
+        let btnApagar = document.createElement("button");
+
+        btnApagar.textContent = "Remover";
+
+        btnApagar.classList.add("btn","btn-danger","ms-3");
+
+        btnApagar.addEventListener("click", () => {
+            li.remove();
+        });
+
+        li.appendChild(btnApagar);
 
         lista.appendChild(li);
 
