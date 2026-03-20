@@ -8,13 +8,13 @@ let texto = tarefa.value;
 
     if (texto === "") ;
 
-        let lista = document.createElement("lista");
+        let lista = document.createElement("li");
 
-        lista.textContent = texto;
+        li.textContent = texto;
 
-        lista.classList.add("list-group-item");
+        li.classList.add("list-group-item");
 
-        listar.appendChild(lista);
+        listar.appendChild(li);
 
         tarefa.value = "";
 });
